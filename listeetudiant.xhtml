@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>liste etudiant</title>
+</head>
+<style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+td:last-child button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+td:last-child button:hover {
+  background-color: #d32f2f;
+}
+
+</style>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>numero</th>
+      <th>code</th>
+      <th>nom</th>
+      <th>prenom</th>
+      <th>ufr</th>
+      <th>niveau</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>p28420</td>
+      <td>ba</td>
+      <td>moussa</td>
+      <td>SEG</td>
+      <td>M1</td>
+    
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>p24200</td>
+      <td>diallo</td>
+      <td>david</td>
+      <td>M2</td>
+      <td>SAT</td>
+    
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>p27100</td>
+      <td>dia</td>
+      <td>fatou</td>
+      <td>L3</td>
+      <td>AGRO</td>
+   
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>p30500</td>
+      <td>diop</td>
+      <td>xaff</td>
+      <td>L2</td>
+      <td>SEFS</td>
+    
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>p31800</td>
+      <td>gaye</td>
+      <td>mina</td>
+      <td>medcine</td>
+      <td>L1</td>
+    
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>p25740</td>
+      <td>ndiaye</td>
+      <td>babacar</td>
+      <td>crac</td>
+      <td>M2</td>
+
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+  </tbody>
+</table>
+
+ <a href="Accueil.xhtml">Accueil</a>
+
+
+
+</body>
+<script>
+function deleteRow(btn) {
+	  var row = btn.parentNode.parentNode;
+	  row.parentNode.removeChild(row);
+	}
+
+	
+
+</script>
+</html>

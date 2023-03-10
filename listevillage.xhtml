@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Liste village</title>
+</head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+td:last-child button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+td:last-child button:hover {
+  background-color: #c9302c;
+}
+
+</style>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Numéro</th>
+      <th>Nom</th>
+      <th>CV</th>
+      <th>Bloc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Village A</td>
+      <td>maemadou sall</td>
+      <td>8 bloc</td>
+       <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Village B</td>
+      <td>maguette fall</td>
+      <td>8 Bloc </td>
+       <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Village C</td>
+      <td>aliou badji</td>
+      <td> 7 Bloc </td>
+       <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Village D</td>
+      <td>badou ba</td>
+      <td>10 Bloc</td>
+       <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Village E</td>
+      <td>cirer dia</td>
+      <td> 8 Bloc</td>
+       <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+  </tbody>
+</table>
+
+ <a href="Accueil.xhtml">Accueil</a>
+</body>
+<script>
+function deleteRow(btn) {
+	  var row = btn.parentNode.parentNode;
+	  row.parentNode.removeChild(row);
+	}
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5em;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+</style>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>num</th>
+      <th>attributaire</th>
+      <th>poche</th>
+  
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>John Diop</td>
+      <td>2</td>
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Jane Smith</td>
+      <td>2</td>
+     <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Bob Johnson</td>
+      <td>1</td>
+      <td><button class="delete-row-btn" onclick="deleteRow(this)">Supprimer</button></td>
+    </tr>
+  </tbody>
+</table>
+
+ <a href="Accueil.xhtml">Accueil</a>
+</body>
+
+<script>
+function deleteRow(btn) {
+	  var row = btn.parentNode.parentNode;
+	  row.parentNode.removeChild(row);
+	}
+</script> 
+</html>
+
